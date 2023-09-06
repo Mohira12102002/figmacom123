@@ -4,31 +4,33 @@
   box-sizing: border-box;
 }
 
-header {
-  padding-top: 38px;
-  background-image: url(../images/image\ 2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-header .container {
+.container {
   max-width: 1350px;
   margin: 0 auto;
 }
-header .container nav {
+
+header {
+  padding-top: 38px;
+  background-image: url(../images/image\ 2.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 187px;
 }
-header .container nav .left {
+header nav .left {
   display: flex;
   align-items: center;
 }
-header .container nav .left img {
+header nav .left img {
   margin-right: 74px;
 }
-header .container nav .left a {
+header nav .left a {
   text-decoration: none;
   margin-right: 40px;
   color: #000;
@@ -38,13 +40,13 @@ header .container nav .left a {
   font-weight: 400;
   line-height: normal;
 }
-header .container nav .left a:last-child {
+header nav .left a:last-child {
   margin-right: 0;
 }
-header .container .home {
+header .home {
   margin-left: 98px;
 }
-header .container .home .title {
+header .home .title {
   color: #000;
   font-family: "Roboto";
   font-size: 100px;
@@ -53,7 +55,7 @@ header .container .home .title {
   line-height: normal;
   margin-bottom: 37px;
 }
-header .container .home .subtitle {
+header .home .subtitle {
   color: #000;
   font-family: "Roboto";
   font-size: 22px;
@@ -63,12 +65,12 @@ header .container .home .subtitle {
   margin-bottom: 37px;
   width: 640px;
 }
-header .container .home .more {
+header .home .more {
   display: flex;
   align-items: center;
   margin-bottom: 95px;
 }
-header .container .home .more p {
+header .home .more p {
   color: #000;
   font-family: "Roboto";
   font-size: 14px;
@@ -77,71 +79,72 @@ header .container .home .more p {
   line-height: normal;
   margin-right: 16px;
 }
-header .container .icons a {
+header .icons a {
   display: block;
   margin-bottom: 14px;
 }
-header .container .icons a:last-child {
+header .icons a:last-child {
   margin-bottom: 25px;
 }
 
-@media only screen and (min-width: 320px) {
-  header {
-    padding-top: 12px;
-    background-image: url(../images/image\ 2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  header .container {
-    max-width: 300px;
+@media only screen and (min-width: 0px) {
+  .container {
+    max-width: 150px;
     margin: 0 auto;
   }
-  header .container nav {
+  header {
+    padding-top: 6px;
+    background-image: url(../images/image\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+  header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 33px;
+    margin-bottom: 16px;
   }
-  header .container nav .left {
+  header nav .left {
     display: flex;
     align-items: center;
   }
-  header .container nav .left img {
-    width: 7px;
-    height: 9px;
-    margin-right: 25px;
+  header nav .left img {
+    width: 4px;
+    height: 5px;
+    margin-right: 13px;
   }
-  header .container nav .left a {
+  header nav .left a {
     text-decoration: none;
-    margin-right: 14px;
+    margin-right: 8px;
     color: #000;
     font-family: "Roboto";
-    font-size: 6px;
+    font-size: 3px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
   }
-  header .container nav .left a:last-child {
+  header nav .left a:last-child {
     margin-right: 0;
   }
-  header .container nav .right img {
-    width: 8px;
-    height: 8px;
+  header nav .right img {
+    width: 5px;
+    height: 5px;
   }
-  header .container .home {
-    margin-left: 40px;
+  header .home {
+    margin-left: 20px;
   }
-  header .container .home .title {
+  header .home .title {
     color: #000;
     font-family: "Roboto";
-    font-size: 25px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
-  header .container .home .subtitle {
+  header .home .subtitle {
     color: #000;
     font-family: "Roboto";
     font-size: 7px;
@@ -151,12 +154,109 @@ header .container .icons a:last-child {
     margin-bottom: 10px;
     width: 130px;
   }
-  header .container .home .more {
+  header .home .more {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
   }
-  header .container .home .more p {
+  header .home .more p {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 3px;
+  }
+  header .home .more img {
+    width: 14px;
+    height: 9px;
+  }
+  header .icons a {
+    display: block;
+    margin-bottom: 1px;
+  }
+  header .icons a:last-child {
+    margin-bottom: 4px;
+  }
+  header .icons a img {
+    width: 4px;
+    height: 4px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  header {
+    padding-top: 12px;
+    background-image: url(../images/image\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 33px;
+  }
+  header nav .left {
+    display: flex;
+    align-items: center;
+  }
+  header nav .left img {
+    width: 7px;
+    height: 9px;
+    margin-right: 25px;
+  }
+  header nav .left a {
+    text-decoration: none;
+    margin-right: 14px;
+    color: #000;
+    font-family: "Roboto";
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  header nav .left a:last-child {
+    margin-right: 0;
+  }
+  header nav .right img {
+    width: 8px;
+    height: 8px;
+  }
+  header .home {
+    margin-left: 40px;
+  }
+  header .home .title {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  header .home .subtitle {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+    width: 130px;
+  }
+  header .home .more {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  header .home .more p {
     color: #000;
     font-family: "Roboto";
     font-size: 5px;
@@ -165,19 +265,203 @@ header .container .icons a:last-child {
     line-height: normal;
     margin-right: 6px;
   }
-  header .container .home .more img {
+  header .home .more img {
     width: 28px;
     height: 18px;
   }
-  header .container .icons a {
+  header .icons a {
     display: block;
     margin-bottom: 3px;
   }
-  header .container .icons a:last-child {
+  header .icons a:last-child {
     margin-bottom: 8px;
   }
-  header .container .icons a img {
+  header .icons a img {
     width: 8px;
     height: 8px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  header {
+    padding-top: 24px;
+    background-image: url(../images/image\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 66px;
+  }
+  header nav .left {
+    display: flex;
+    align-items: center;
+  }
+  header nav .left img {
+    width: 13px;
+    height: 17px;
+    margin-right: 50px;
+  }
+  header nav .left a {
+    text-decoration: none;
+    margin-right: 27px;
+    color: #000;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  header nav .left a:last-child {
+    margin-right: 0;
+  }
+  header nav .right img {
+    width: 15px;
+    height: 15px;
+  }
+  header .home {
+    margin-left: 80px;
+  }
+  header .home .title {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  header .home .subtitle {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+    width: 260px;
+  }
+  header .home .more {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  header .home .more p {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 12px;
+  }
+  header .home .more img {
+    width: 56px;
+    height: 36px;
+  }
+  header .icons a {
+    display: block;
+    margin-bottom: 6px;
+  }
+  header .icons a:last-child {
+    margin-bottom: 15px;
+  }
+  header .icons a img {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header {
+    padding-top: 30px;
+    background-image: url(../images/image\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+  header nav .left {
+    display: flex;
+    align-items: center;
+  }
+  header nav .left img {
+    margin-right: 50px;
+  }
+  header nav .left a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #000;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  header nav .left a:last-child {
+    margin-right: 0;
+  }
+  header .home {
+    margin-left: 60px;
+  }
+  header .home .title {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 28px;
+  }
+  header .home .subtitle {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 28px;
+    width: 520px;
+  }
+  header .home .more {
+    display: flex;
+    align-items: center;
+    margin-bottom: 75px;
+  }
+  header .home .more p {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 13px;
+  }
+  header .home .more img {
+    width: 50px;
+    height: 30px;
+  }
+  header .icons a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  header .icons a:last-child {
+    margin-bottom: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
